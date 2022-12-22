@@ -1,0 +1,48 @@
+/* Main Slider */
+
+.main-slider .swiper-pagination-bullet-active {
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 26px;
+    outline: 1px solid #ececec;
+}
+
+.main-slider .swiper-pagination {
+    text-align: right;
+    left: -20px;
+}
+
+
+/* Category SLider */
+
+.category .swiper {
+    display: flex;
+    flex-direction: column;
+}
+
+.category .swiper-wrapper {
+    order: 2;
+}
+
+.category .swiper-button-prev,
+.category .swiper-button-next {
+    top: 26px;
+}
+
+
+.category .swiper-button-prev {
+    left: 145px;
+}
+
+.category .swiper-button-next {
+    left: 185px;
+}
+
+.category .swiper-button-next::after, .swiper-button-prev::after {
+    color: #212121;
+    font-size: 20px;
+}
+
+.swiper-notification {
+    display: none;
+}
