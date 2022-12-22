@@ -113,3 +113,27 @@ export const UserMenuLink = styled.a<NavLinkProps>`
         }});
     }
 `;
+
+
+export const CardCircle = styled.div`
+    position: absolute;
+    background: rgba(72, 89, 240, 0.99);
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    width: 19px;
+    height: 17px;
+    background: rgba(72, 89, 240, 0.99);
+    border: 2px solid rgba(72, 89, 240, 0.2);
+    border-radius: 50%;
+    text-align: center;
+    padding: 1px 0;
+    margin: 0 auto;
+    top: -12px;
+    left: -17px;
+    font-weight: 700;
+
+    span {
+        margin: 0;
+    }
+`

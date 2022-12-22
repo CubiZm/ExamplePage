@@ -1,7 +1,7 @@
 import * as React from "react"
 import type { PageProps } from "gatsby"
 
-import {UserMenuWrap, UserMenuItem, UserMenuLink} from "./styles"
+import {UserMenuWrap, UserMenuItem, UserMenuLink, CardCircle} from "./styles"
 
 const userMenuLinks = [
   {
@@ -22,7 +22,8 @@ const userMenuLinks = [
   {
     text: "Cart",
     url: "#",
-    LinkType: "cart"
+    LinkType: "cart",
+    countItems: 32
   },
 ]
 
@@ -37,6 +38,12 @@ const UserMenu: React.FC<PageProps> = () => {
               href={`${userMenuData.url}`}
             >   
               <span>{userMenuData.text}</span>
+
+              {userMenuData.countItems &&
+                <CardCircle>
+                  <span>{userMenuData.countItems}</span>
+                </CardCircle>
+              }
             </UserMenuLink>
           </UserMenuItem>
         ))}
